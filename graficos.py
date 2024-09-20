@@ -12,7 +12,7 @@ for j in range(len(tabela.columns)):
     valores.append(tabela.columns[j])
     
 for i in range (len(valores)):
-    plt.figure(figsize=(14, 8)) 
+    plt.figure(figsize=(15, 8)) 
     plt.pie(tabela[valores[i]].value_counts(),autopct="%1.0f%%")
     plt.legend(labels=tabela[valores[i]].value_counts().index, 
            loc="upper left",  
