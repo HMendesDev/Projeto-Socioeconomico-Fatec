@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy 
-from wordcloud import WordCloud
+from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 
 valores = []
 colunas_para_remover = ["Empresa que está contrado:","Escreva algumas linhas sobre sua história e seus sonhos de vida:","Idade:"]
