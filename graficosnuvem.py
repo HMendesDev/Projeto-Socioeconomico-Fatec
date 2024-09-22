@@ -3,10 +3,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 #Nuvem de palavras das Empresas
-# nuvem = pd.read_csv("NuvemEmpresas.txt")
-# print(nuvem)
-# text = " ".join(i for i in nuvem["Empresas:"])
-# print(text)
+nuvem = pd.read_csv("NuvemSonhos.txt")
+print(nuvem)
+text = " ".join(i for i in nuvem["Sonhos:"])
+print(text)
 # eliminar = set(STOPWORDS)
 # eliminar = eliminar.update(["Não", "se", "sea", "aplica","eu","meus","você", "meu",
 # "e","em","as","do","na","e","era","fui","é","no","de","Tenho","Estou","como","para"])
@@ -18,7 +18,3 @@ from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 # plt.savefig('Graficos/graficonuvem1.jpeg',format = 'jpeg')
 
 #Nuvem de palavras dos Sonhos
-nuvem2 = pd.read_csv("NuvemSonhos.txt")
-print(nuvem2)
-text2 = " ".join(i for i in nuvem2["Sonhos:"])
-print(text2)
